@@ -11,7 +11,7 @@ const WeatherContextProvider = (props) => {
 
   useEffect( () => {
     async function fetchData(){
-     const request = Axios.get(`http://api.openweathermap.org/data/2.5/weather?q=${province}&appid=49327d17c5063ead0f914b5580e31576`);
+     const request = Axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${province}&appid=49327d17c5063ead0f914b5580e31576`);
      const response = await request; 
      setWeather(response.data);
      setRender(true);

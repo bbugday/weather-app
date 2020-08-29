@@ -10,7 +10,7 @@ const WeatherDetails = () => {
       <div className="weather-container">
         <div className="weather-main">
           <img
-            src={`http://openweathermap.org/img/wn/${weather.weather[0].icon}@2x.png`}
+            src={`https://openweathermap.org/img/wn/${weather.weather[0].icon}@2x.png`}
             alt="weather main"
             width="150px"
             height="150px"
