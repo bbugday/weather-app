@@ -19,6 +19,11 @@ const WeatherContextProvider = (props) => {
     fetchData();
   },[province]);
 
+  //will trigger the callback only after the first render
+  useEffect(() => {
+    setProvince('istanbul');
+  }, [])
+
 
   return (
     <WeatherContext.Provider value={{ weather, setWeather,province,setProvince,render }}>
