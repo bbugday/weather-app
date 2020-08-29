@@ -16,9 +16,8 @@ const WeatherForm = () => {
 
   
   return(
-    <form onSubmit={handleSubmit}>
-      <input type="text" placeholder="Enter a Province" value={provinceForm} onChange={(e) => setProvinceForm(e.target.value)} required />  
-      <input type="submit" value="change province"/>
+    <form className="weather-form" onSubmit={handleSubmit}>
+      <input type="text" placeholder="City Name" value={provinceForm} onChange={(e) => setProvinceForm(e.target.value)} required />
     </form>
   );
 }
